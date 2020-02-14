@@ -40,7 +40,8 @@ class Song
     @@all.sort_by{|names| names.name} 
   end
   def self.new_from_filename(name) 
-    
+    song = self.new 
+    song.split()
   def self.destroy_all 
     @@all.clear 
   end
